@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugasan #1 – Surat Cinta (HTML dan CSS)</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+
+        .container-parent {
+            background-color: grey; 
+            width: 100%; 
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container-child {
+            width: 800px;
+            padding: 50px 80px;
+            background-color: whitesmoke;
+            border-radius: 20px;
+            box-shadow: 15px 15px 15px;
+        }
+
+        img {
+            width: 300px;
+            height: 300px;
+        }
+
+        .column2 {
+            display: flex;
+            justify-content:space-around;
+        }
+
+        .listing {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+        }
+
+        blockquote {
+            display: block;
+            margin-top: 1em;
+            margin-bottom: 1em;
+            margin-left: 40px;
+            margin-right: 40px;
+            font-style: italic;
+        }
+
+        blockquote p::before {
+            content: "“";
+            font-size: 3rem;
+            margin: -1rem 0 0 -2rem;
+            position: absolute;
+        }
+
+        blockquote p::after {
+            content: "”";
+            font-size: 3rem;
+            margin: -1rem 0 1 1;
+            position: absolute;
+        }
+
+        blockquote p::before,
+        blockquote p::after {
+            color: var(--dark-primary-03);
+        }
+
+        cite {
+            display: flex;
+            flex-direction: row-reverse;
+            align-content: end;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <div class="container-parent">
+        <div class="container-child">
+            <div class="column1">
+                <h1>
+                    Saya seorang programmer
+                </h1>
+                <br>
+                <h2>
+                    1. Saya adalah peserta kelas Programming MERN Stack
+                </h2>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore voluptate facilis, <span style="color:red;">fontbcaecati ex quia laudantium ut maxime maiores quo iure sit temporibus cupiditate praesentium.</span> Quam quo harum temporibus laudantium reiciendis tenetur eos placeat.
+                </p>
+                <br>
+                <p><span style="font-size: 2rem; color: blueviolet;">Voluptas</span> qui hic maxime officia, earum eum autem itaque adipisci magni odio sint! Sed dolore voluptatibus.
+                <br>
+                <blockquote>
+                    <p>Menurut Vygotsky, pelajar memerlukan cabaran yang bersesuaian untuk belajar, tetapi cabaran yang diberikan terlalu jauh daripada pemahaman semasa.</p>
+                </blockquote>
+                <cite><b>Vygotsky (1978)</b></cite>
+            </div>
+            
+            <br>
+            <div class="column2">
+                <div>
+                    <img src="programming.jpeg">
+                </div>
+                <div class="listing">
+                    <ol>
+                        <li>
+                            HTML
+                        </li>
+                        <li>
+                            CSS
+                        </li>
+                    </ol>
+                    <ul>
+                        <li>
+                            JavaScript
+                        </li>
+                        <li>
+                            MERN Stack
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
